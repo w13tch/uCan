@@ -1,0 +1,52 @@
+@import "./base.css";
+
+
+.menuTop{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.menuTop a{
+    background-color: #5F9B84;
+    color: #383838;
+}
+
+.menuName h2{
+    font-size: 50px;
+    color: #383838;
+    font-family: Unbounded;
+}
+
+.menuName h3{
+    font-size: 40px;
+    color: #5F9B84;
+    font-family: Unbounded;
+    padding-left: 50px;
+}
+
+.menuTop a{
+    font-size: 20px;
+    text-align: center;
+    color: #383838;
+    background-color: #5F9B84;
+    font-family: Unbounded;
+    padding: 12px 100px;
+    height: 50px;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.menuBtns{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuBtns a{
+    background-color: #8AC6AF;
+    color: #383838;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 20px;
+}

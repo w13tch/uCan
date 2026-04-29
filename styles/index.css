@@ -1,0 +1,41 @@
+@import "./base.css";
+@import "./menu.css";
+
+.infoMain{
+    background-image: url("../images/backImg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 950px;
+    width: 100%;
+}
+
+.info{
+    font-family: Unbounded;
+    font-size: 150px;
+    color: #fff;
+    text-align: center;
+    padding-top: 120px;
+}
+
+header{
+    position: absolute;
+    border-bottom: 2px solid #fff;
+}
+
+.logoLink {
+    color: #fff;
+}
+
+.headerLink a {
+    color: #fff;
+}
+
+.shopping-bag-link {
+    background-image: url("../images/cartImgIndex.png");
+}
+
+
+.profile-link {
+    background-image: url("../images/profleImgIndex.png");
+}

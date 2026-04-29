@@ -1,0 +1,159 @@
+@import "./reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #383838;
+    padding: 20px;
+    margin-bottom: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1320px;
+    position: relative
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoLink {
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: bold;
+    color: #383838;
+    text-align: left;
+    cursor: pointer;
+}
+
+.headerLink {
+    display: flex;
+    gap: 40px;
+}
+
+.headerLink a {
+    font-family: Unbounded;
+    font-size: 16px;
+    color: #383838;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.shopping-bag-link {
+    display: inline-block;
+    height: 40px;
+    width: 46px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-link {
+    display: inline-block;
+    height: 40px;
+    width: 38px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.shopping-bag-link {
+    background-image: url("../images/cartImg.png");
+}
+
+
+.profile-link {
+    background-image: url("../images/profleImg.png");
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* footer */
+
+footer {
+    background-color: #383838;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-top .logoLink {
+    font-family: Unbounded;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footerLeft,
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerLeft a,
+.footerRight a {
+    font-family: Unbounded;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footerLeft a:hover,
+.footerRight a:hover {
+    opacity: 0.7;
+}
+
+.footerCopy{
+    font-family: Unbounded;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+}
