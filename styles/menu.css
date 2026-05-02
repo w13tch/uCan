@@ -1,31 +1,32 @@
 @import "./base.css";
+@import "./drinks.css";
 
 
-.menuTop{
+.menuTop {
     padding-top: 30px;
     padding-bottom: 15px;
     display: flex;
 }
 
-.menuTop a{
+.menuTop a {
     background-color: #5F9B84;
     color: #383838;
 }
 
-.menuName h2{
+.menuName h2 {
     font-size: 50px;
     color: #383838;
     font-family: Unbounded;
 }
 
-.menuName h3{
+.menuName h3 {
     font-size: 40px;
     color: #5F9B84;
     font-family: Unbounded;
     padding-left: 50px;
 }
 
-.menuTop a{
+.menuTop a {
     font-size: 20px;
     text-align: center;
     color: #383838;
@@ -38,13 +39,21 @@
     margin-top: 30px;
 }
 
-.menuBtn{
+.menuTop a:hover {
+    background-color: #578573;
+}
+
+.menuTop a:active {
+    background-color: rgb(110, 164, 143);
+}
+
+.menuBtn {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.menuBtn a{
+.menuBtn a {
     background-color: #8AC6AF;
     font-family: Unbounded;
     color: #383838;
@@ -52,5 +61,87 @@
     border-radius: 10px;
     text-align: center;
     padding: 5px 50px;
-    display:inline-block;
+    display: inline-block;
+}
+
+.menuBtn a:hover {
+    background-color: #73a290;
+}
+
+.menuBtn a:active {
+    background-color: #a4dac5;
+}
+
+
+/* карточки товаров */
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menuArticle {
+    display: flex;
+    justify-content: center;
+    background-color: #EADFCD;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.menuInfo{
+    background-color: rgba(189, 174, 151, 0.5);
+    border-radius: 10px;
+    width: 300px;
+    flex: 1;
+}
+
+.itemNames{
+    font-family: Unbounded;
+    color: #383838;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.itemAbout{
+    font-family: Unbounded;
+    color: #383838;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.menuArticleBottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.itemPrice{
+    font-family: Unbounded;
+    color: #383838;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.itemMenu{
+    font-family: Unbounded;
+    color: #fff;
+    font-size: 12px;
+    background-color: rgba(56, 56, 56, 0.2);
+    border: #fff solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.itemMenu:hover{
+    background-color: rgba(56, 56, 56, 0.4);
+}
+
+.itemMenu:active{
+    background-color: rgba(56, 56, 56, 0.1);
 }

@@ -1,0 +1,46 @@
+.espresso, .americanoHot, .latteHot, .capuchinoHot,
+.rafHot, .mochoHot, .matchaHot, .cocoaHot,
+.americanoCold, .latteCold, .capuchinoCold, .rafCold, 
+.mochoCold, .matchaCold{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+/* Общие стили для всех изображений */
+.espresso img , .americanoHot img, .latteHot img, .capuchinoHot img,
+.rafHot img, .mochoHot img, .matchaHot img, .cocoaHot img, 
+.americanoCold img, .latteCold img, .capuchinoCold img, .rafCold img,
+.mochoCold img, .matchaCold img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.espresso img, .matchaHot img{
+    height: 250px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.americanoHot img, .capuchinoHot img, .rafHot img,
+.mochoHot img, .cocoaHot img{
+    margin-top: 40px;
+    height: 240px;
+    margin-bottom: 30px;
+}
+
+.latteHot img{
+    width: 220px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.americanoCold img, .latteCold img, .capuchinoCold img,
+.rafCold img, .mochoCold img, .matchaCold img{
+    width: 300px;
+    margin-bottom: 20px;
+}
