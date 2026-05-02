@@ -50,7 +50,7 @@
 
                 <div class="menuArticle">
                     <article class="espresso">
-                        <img src="images/espresso.png">
+                        <img src="images/drinks/espresso.png">
                         <div class="menuInfo">
                             <p class="itemNames">название</p>
                             <p class="itemAbout">состав</p>
@@ -64,69 +64,25 @@
                     </article>
                 </div>
 
-                <div class="menuArticle">
-                    <article class="matchaHot">
-                        <img src="images/matchaHot.png">
-                        <div class="menuInfo">
-                            <p class="itemNames">название</p>
-                            <p class="itemAbout">состав</p>
-                            <div class="menuArticleBottom">
-                                <p class="itemPrice">цена</p>
-                                <form action="" method="POST" class="itemMenu">
-                                    <input type="submit" value="в корзину" class="itemMenuBtn">
-                                </form>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                <!-- 
+                $drinksItem = $dbcon->query("SELECT * FROM `drinks`");
 
                 <div class="menuArticle">
-                    <article class="mochoHot">
-                        <img src="images/mochoHot.png">
+                    <?php while ($row = $drinksItem->fetch_assoc()): ?>
+                    <article class="<?php echo htmlspecialchars($row['class']); ?>">
+                        <img src="images/drinks/<?php echo htmlspecialchars($row['image']); ?>">
                         <div class="menuInfo">
-                            <p class="itemNames">название</p>
-                            <p class="itemAbout">состав</p>
+                            <p class="itemNames"><?php echo htmlspecialchars($row['name']); ?></p>
+                            <p class="itemAbout"><?php echo nl2br(htmlspecialchars($row['description'])); ?></p>
                             <div class="menuArticleBottom">
-                                <p class="itemPrice">цена</p>
+                                <p class="itemPrice"><?php echo htmlspecialchars($row['price']); ?> руб.</p>
                                 <form action="" method="POST" class="itemMenu">
                                     <input type="submit" value="в корзину" class="itemMenuBtn">
                                 </form>
                             </div>
                         </div>
                     </article>
-                </div>
-
-                <div class="menuArticle">
-                    <article class="latteHot">
-                        <img src="images/latteHot.png">
-                        <div class="menuInfo">
-                            <p class="itemNames">название</p>
-                            <p class="itemAbout">состав</p>
-                            <div class="menuArticleBottom">
-                                <p class="itemPrice">цена</p>
-                                <form action="" method="POST" class="itemMenu">
-                                    <input type="submit" value="в корзину" class="itemMenuBtn">
-                                </form>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="menuArticle">
-                    <article class="matchaIce">
-                        <img src="images/matchaIce.png">
-                        <div class="menuInfo">
-                            <p class="itemNames">название</p>
-                            <p class="itemAbout">состав</p>
-                            <div class="menuArticleBottom">
-                                <p class="itemPrice">цена</p>
-                                <form action="" method="POST" class="itemMenu">
-                                    <input type="submit" value="в корзину" class="itemMenuBtn">
-                                </form>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                </div> -->
 
             </div>
         </section>
